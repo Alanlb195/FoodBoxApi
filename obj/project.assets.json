@@ -9930,19 +9930,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ALAIN LÓPEZ\\.nuget\\packages\\": {}
+    "C:\\Users\\ALBR\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyectos\\FoodBoxApi\\FoodBoxApi.csproj",
+      "projectUniqueName": "C:\\Users\\ALBR\\Desktop\\Proyectos\\FoodBoxApi\\FoodBoxApi.csproj",
       "projectName": "FoodBoxApi",
-      "projectPath": "C:\\Proyectos\\FoodBoxApi\\FoodBoxApi.csproj",
-      "packagesPath": "C:\\Users\\ALAIN LÓPEZ\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyectos\\FoodBoxApi\\obj\\",
+      "projectPath": "C:\\Users\\ALBR\\Desktop\\Proyectos\\FoodBoxApi\\FoodBoxApi.csproj",
+      "packagesPath": "C:\\Users\\ALBR\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ALBR\\Desktop\\Proyectos\\FoodBoxApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ALAIN LÓPEZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ALBR\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10013,7 +10013,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
