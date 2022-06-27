@@ -7,12 +7,12 @@ namespace FoodBoxApi.Models.Database
     {
         public Categoria()
         {
-            Productos = new HashSet<Producto>();
+            Producto = new HashSet<Producto>();
         }
 
         public uint CategoriaId { get; set; }
         public string Nombre { get; set; } = null!;
 
-        public virtual ICollection<Producto> Productos { get; set; }
+        public virtual ICollection<Producto> Producto { get; set; }
     }
 }

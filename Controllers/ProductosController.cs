@@ -23,7 +23,7 @@ namespace FoodBoxApi.Controllers
         // GET: api/Productos
         public async Task<ActionResult<IEnumerable<Producto>>> GetTodosLosProductos()
         {
-            return await _context.Productos
+            return await _context.Producto
                 .Include(s => s.Sucursal)
                 .Include(c => c.Categoria)
                 .ToListAsync();
