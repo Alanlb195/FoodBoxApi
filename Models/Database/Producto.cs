@@ -12,7 +12,7 @@ namespace FoodBoxApi.Models.Database
         public string Descripcion { get; set; } = null!;
         public uint SucursalId { get; set; }
         public uint CategoriaId { get; set; }
-        public virtual Categoria Categoria { get; set; } = null!;
-        public virtual Sucursal Sucursal { get; set; } = null!;
+        public virtual Categoria? Categoria { get; set; } = null;
+        public virtual Sucursal? Sucursal { get; set; } = null;
     }
 }

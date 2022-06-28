@@ -20,7 +20,8 @@ namespace FoodBoxApi.Controllers
             _context = context;
         }
 
-        // GET: api/Productos
+        // GET: api/Producto
+        [HttpGet]
         public async Task<ActionResult<IEnumerable<Producto>>> GetTodosLosProductos()
         {
             return await _context.Producto
@@ -28,5 +29,35 @@ namespace FoodBoxApi.Controllers
                 .Include(c => c.Categoria)
                 .ToListAsync();
         }
+
+        // GET: api/Productos/ProductoId - Obtiene el Producto solicitado, para pagina informacion detallada.
+        [HttpGet("{productoId}")]
+        public async Task<ActionResult<Producto>> GetProductoPorId(int productoId)
+        {
+            var query = await _context.Producto.FromSqlInterpolated($"SELECT * FROM producto WHERE productoId = {productoId}")
+                        .Include(s => s.Sucursal)
+                        .SingleOrDefaultAsync();
+
+            if (query != null)
+            {
+                return query;
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
+
+        // POST: api/Productos/add/[Producto] -  Inserta un objeto Producto en la tabla producto.
+        [HttpPost("add")]
+        public async Task<ActionResult<Producto>> PostProducto(Producto producto)
+        {
+            _context.Producto.Add(producto);
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
     }
 }
